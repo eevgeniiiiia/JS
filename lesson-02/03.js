@@ -17,6 +17,9 @@ if (score >= 90 && score <= 100) {
     grade = 'C';
 } else if (score >= 50) {
     grade = 'D';
-} else {
+} else if (score >= 0) {
     grade = 'F';
-} 
+} else {
+    grade = 'Некорректный балл'; 
+}
+
