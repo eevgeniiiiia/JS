@@ -24,4 +24,4 @@ if(score === 0 && score <= 49 )
     grade = "Error"
 }
 
-console.log(grade)
+
