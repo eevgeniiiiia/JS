@@ -29,14 +29,8 @@ console.log(gallery)
 }
 */
 
-const gallery = {
-  'Mona Lisa': 'Leonardo da Vinci',
-  'Starry Night': 'Vincent van Gogh',
-  'The Scream': 'Edvard Munch',
-}
-
 function updateGallery(object, key, newValue) {
-  if(gallery.hasOwnProperty(key)){
+  if(Object.keys(object).includes(key)){ //Можно получить массив ключей объекта и проверить наличие нужного ключа с помощью метода .includes():
     gallery[key] = newValue;
   } else {
     gallery[key] = newValue;
