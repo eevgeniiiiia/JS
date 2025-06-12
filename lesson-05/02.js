@@ -33,6 +33,6 @@ function updateGallery(object, key, newValue) {
   if(Object.keys(object).includes(key)){ //Можно получить массив ключей объекта и проверить наличие нужного ключа с помощью метода .includes():
     object[key] = newValue;
   } else {
-    gallery[key] = newValue;
+    object[key] = newValue;
   }
 }
